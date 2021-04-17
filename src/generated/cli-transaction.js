@@ -5,6 +5,7 @@ import cosmos from "../families/cosmos/cli-transaction.js";
 import ethereum from "../families/ethereum/cli-transaction.js";
 import polkadot from "../families/polkadot/cli-transaction.js";
 import ripple from "../families/ripple/cli-transaction.js";
+import solana from "../families/solana/cli-transaction.js";
 import stellar from "../families/stellar/cli-transaction.js";
 import tezos from "../families/tezos/cli-transaction.js";
 import tron from "../families/tron/cli-transaction.js";
@@ -16,6 +17,7 @@ export default {
   ethereum,
   polkadot,
   ripple,
+  solana,
   stellar,
   tezos,
   tron,

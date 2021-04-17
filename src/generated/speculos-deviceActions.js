@@ -5,6 +5,7 @@ import cosmos from "../families/cosmos/speculos-deviceActions.js";
 import ethereum from "../families/ethereum/speculos-deviceActions.js";
 import polkadot from "../families/polkadot/speculos-deviceActions.js";
 import ripple from "../families/ripple/speculos-deviceActions.js";
+import solana from "../families/solana/speculos-deviceActions.js";
 import stellar from "../families/stellar/speculos-deviceActions.js";
 import tron from "../families/tron/speculos-deviceActions.js";
 
@@ -15,6 +16,7 @@ export default {
   ethereum,
   polkadot,
   ripple,
+  solana,
   stellar,
   tron,
 };
