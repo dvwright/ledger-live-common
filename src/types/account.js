@@ -14,6 +14,10 @@ import type {
   CosmosResourcesRaw,
 } from "../families/cosmos/types";
 import type {
+  SolanaResources,
+  SolanaResourcesRaw,
+} from "../families/solana/types";
+import type {
   AlgorandResources,
   AlgorandResourcesRaw,
 } from "../families/algorand/types";
@@ -197,6 +201,7 @@ export type Account = {
   bitcoinResources?: BitcoinResources,
   tronResources?: TronResources,
   cosmosResources?: CosmosResources,
+  solanaResources?: SolanaResources,
   algorandResources?: AlgorandResources,
   polkadotResources?: PolkadotResources,
 
@@ -282,6 +287,7 @@ export type AccountRaw = {
   bitcoinResources?: BitcoinResourcesRaw,
   tronResources?: TronResourcesRaw,
   cosmosResources?: CosmosResourcesRaw,
+  solanaResources?: solanaResourcesRaw,
   algorandResources?: AlgorandResourcesRaw,
   polkadotResources?: PolkadotResourcesRaw,
   swapHistory?: SwapOperationRaw[],

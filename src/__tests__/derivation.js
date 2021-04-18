@@ -11,6 +11,7 @@ describe("derivation", () => {
       ["bitcoin", ["native_segwit", "segwit", ""]],
       ["ethereum", null],
       ["cosmos", null],
+      ["solana", null],
       ["litecoin", ["native_segwit", "segwit", ""]],
       ["qtum", ["segwit", ""]],
     ];
@@ -27,6 +28,7 @@ describe("derivation", () => {
       ["bitcoin", "native_segwit"],
       ["ethereum", null],
       ["cosmos", null],
+      ["solana", null],
       ["litecoin", "native_segwit"],
       ["qtum", "segwit"],
     ];

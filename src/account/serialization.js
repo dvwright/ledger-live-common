@@ -28,6 +28,10 @@ import {
   fromCosmosResourcesRaw,
 } from "../families/cosmos/serialization";
 import {
+  toSolanaResourcesRaw,
+  fromSolanaResourcesRaw,
+} from "../families/solana/serialization";
+import {
   toAlgorandResourcesRaw,
   fromAlgorandResourcesRaw,
 } from "../families/algorand/serialization";
@@ -49,6 +53,7 @@ export { toCosmosResourcesRaw, fromCosmosResourcesRaw };
 export { toAlgorandResourcesRaw, fromAlgorandResourcesRaw };
 export { toBitcoinResourcesRaw, fromBitcoinResourcesRaw };
 export { toPolkadotResourcesRaw, fromPolkadotResourcesRaw };
+export { toSolanaResourcesRaw, fromSolanaResourcesRaw };
 
 export function toBalanceHistoryRaw(b: BalanceHistory): BalanceHistoryRaw {
   return b.map(({ date, value }) => [date.toISOString(), value.toString()]);
@@ -666,6 +671,10 @@ export function fromAccountRaw(rawAccount: AccountRaw): Account {
     res.cosmosResources = fromCosmosResourcesRaw(cosmosResources);
   }
 
+  if (solanaResources) {
+    res.solanaResources = fromSolanaResourcesRaw(solanaResources);
+  }
+
   if (bitcoinResources) {
     res.bitcoinResources = fromBitcoinResourcesRaw(bitcoinResources);
   }
@@ -757,6 +766,9 @@ export function toAccountRaw({
   }
   if (cosmosResources) {
     res.cosmosResources = toCosmosResourcesRaw(cosmosResources);
+  }
+  if (solanaResources) {
+    res.solanaResources = toSolanaResourcesRaw(solanaResources);
   }
   if (bitcoinResources) {
     res.bitcoinResources = toBitcoinResourcesRaw(bitcoinResources);

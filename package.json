@@ -76,7 +76,7 @@
     "@ledgerhq/hw-app-algorand": "^5.49.0",
     "@ledgerhq/hw-app-btc": "^5.49.0",
     "@ledgerhq/hw-app-cosmos": "^5.49.0",
-    "@ledgerhq/hw-app-solana": "^5.49.0",
+    "hw-app-solana": "https://github.com/dvwright/hw-app-solana",
     "@ledgerhq/hw-app-eth": "5.49.0",
     "@ledgerhq/hw-app-polkadot": "^5.49.0",
     "@ledgerhq/hw-app-str": "^5.49.0",

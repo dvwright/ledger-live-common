@@ -89,6 +89,10 @@ export const CosmosRedelegationInProgress = createCustomErrorClass(
   "CosmosRedelegationInProgress"
 );
 
+export const SolanaRedelegationInProgress = createCustomErrorClass(
+  "SolanaRedelegationInProgress"
+);
+
 export const ClaimRewardsFeesWarning = createCustomErrorClass(
   "ClaimRewardsFeesWarning"
 );
@@ -99,6 +103,14 @@ export const CosmosDelegateAllFundsWarning = createCustomErrorClass(
 
 export const CosmosTooManyValidators = createCustomErrorClass(
   "CosmosTooManyValidators"
+);
+
+export const SolanaDelegateAllFundsWarning = createCustomErrorClass(
+  "SolanaDelegateAllFundsWarning"
+);
+
+export const SolanaTooManyValidators = createCustomErrorClass(
+  "SolanaTooManyValidators"
 );
 
 export const NotEnoughDelegationBalance = createCustomErrorClass(
@@ -149,6 +161,11 @@ export const CosmosBroadcastError = {
   "34": createCustomErrorClass("CosmosBroadcastUnpackAny"),
   "35": createCustomErrorClass("CosmosBroadcastLogic"),
   "36": createCustomErrorClass("CosmosBroadcastConflict"),
+};
+
+// TODO
+export const SolanaBroadcastError = {
+  "1": createCustomErrorClass("SolanaBroadcastCodeInternal"),
 };
 
 export const SatStackVersionTooOld = createCustomErrorClass(

@@ -138,6 +138,7 @@ export function sync(
           shouldRetainPendingOperation(syncedAccount, op)
         ),
         cosmosResources: syncedAccount.cosmosResources,
+        solanaResources: syncedAccount.solanaResources,
         algorandResources: syncedAccount.algorandResources,
         bitcoinResources: syncedAccount.bitcoinResources,
       })

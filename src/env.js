@@ -68,6 +68,16 @@ const envDefinitions = {
     desc:
       "Node API to use for cosmos_testnet (COSMOS_NODE or STARGATE_NODE are known)",
   },
+  API_SOLANA_BLOCKCHAIN_EXPLORER_API_ENDPOINT: {
+    def: "https://solana.coin.ledger.com/",
+    parser: stringParser,
+    desc: "Node endpoint for solana",
+  },
+  API_SOLANA_NODE: {
+    def: "SOLFLARE_NODE",
+    parser: stringParser,
+    desc: "Node API to use for solana (SOLFLARE_NODE is known)",
+  },
   API_RIPPLE_WS: {
     parser: stringParser,
     def: "wss://xrplcluster.com",

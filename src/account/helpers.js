@@ -209,6 +209,8 @@ export const getVotesCount = (
     return mainAccount.tronResources.votes.length;
   } else if (mainAccount.cosmosResources) {
     return mainAccount.cosmosResources.delegations.length;
+  } else if (mainAccount.solanaResources) {
+    return mainAccount.solanaResources.delegations.length;
   }
   return 0;
 };

@@ -401,6 +401,19 @@ export function genAccount(
     };
   }
 
+  if (currency.id === "solana") {
+    account.solanaResources = {
+      // TODO variation in these
+      delegations: [],
+      redelegations: [],
+      unbondings: [],
+      delegatedBalance: BigNumber(0),
+      pendingRewardsBalance: BigNumber(0),
+      unbondingBalance: BigNumber(0),
+      withdrawAddress: address,
+    };
+  }
+
   if (currency.family === "bitcoin") {
     account.bitcoinResources = {
       utxos: [],

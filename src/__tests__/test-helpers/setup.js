@@ -29,6 +29,7 @@ setSupportedCurrencies([
   "tron",
   "stellar",
   "cosmos",
+  "solana",
   "algorand",
   "polkadot",
   "bitcoin_testnet",

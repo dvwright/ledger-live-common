@@ -283,6 +283,14 @@ export function patchAccount(
   }
 
   if (
+    updatedRaw.solanaResources &&
+    account.solanaResources !== updatedRaw.solanaResources
+  ) {
+    next.solanaResources = fromSolanaResourcesRaw(updatedRaw.solanaResources);
+    changed = true;
+  }
+
+  if (
     updatedRaw.algorandResources &&
     account.algorandResources !== updatedRaw.algorandResources
   ) {
